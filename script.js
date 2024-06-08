@@ -197,9 +197,6 @@ function animate() {
   c.fillStyle = "black";
   c.fillRect(0, 0, canvas.width, canvas.height);
 
-  console.log(player.position.x);
-  console.log(enemy.position.x);
-
   background.update();
   shop.update();
   player.update();
@@ -299,7 +296,7 @@ addEventListener("keydown", (e) => {
           player.velocity.y = -15;
         }
         break;
-      case "s":
+      case " ":
         typeOfAttack = player.attakc();
         if (typeOfAttack === "Attack1") playSound("mackAttack1");
         else playSound("mackAttack2");
@@ -335,6 +332,8 @@ addEventListener("keydown", (e) => {
   }
 });
 
+const ins = document.getElementById("instruction");
+
 addEventListener("keyup", (e) => {
   switch (e.key) {
     case "d":
@@ -347,7 +346,7 @@ addEventListener("keyup", (e) => {
       if (keys.d.pressed) player.lastKey = "d";
       else stopMackFoot();
       break;
-    case "s":
+    case " ":
       kenjiHits = false;
     case "ArrowRight":
       keys.ArrowRight.pressed = false;
@@ -366,11 +365,19 @@ addEventListener("keyup", (e) => {
 });
 
 window.onload = () => {
+  ins.style.display = "flex";
   result.style.display = "flex";
+  P1meter.style.display = 'none';
+  P2meter.style.display = 'none';
+  timer.style.display = 'none';
 };
 
 playBtn.addEventListener("click", () => {
   result.style.display = "none";
+  ins.style.display = "none";
+  P1meter.style.display = "flex";
+  P2meter.style.display = "flex";
+  timer.style.display = "flex";
   BGM.play();
   playSound("fight");
   c.clearRect(0, 0, canvas.width, canvas.height);
