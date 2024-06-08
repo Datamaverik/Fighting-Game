@@ -12,20 +12,29 @@ The game features two players, each with their own set of controls. The players 
 
 ### Player 1
 
--   Move Left: 'A'
--   Move Right: 'D'
--   Jump: 'W'
--   Attack; 'S'
--   There's a 1/4 chance that the attack could be a special attack, dealing 4 times more damage than a regular attack.
+- Move Left: 'A'
+- Move Right: 'D'
+- Jump: 'W'
+- Attack; 'S'
+- There's a 1/4 chance that the attack could be a special attack, dealing 4 times more damage than a regular attack.
+
+### Player 2
+
+- Move Left: 'ArrowLeft'
+- Move Right: 'ArrowRight'
+- Jump: 'ArrowUp'
+- Attack; 'ArrowDown'
+- Similar to Player 1, there is a 1/4 chance that the attack could be a special attack, dealing 4 times more damage than a regular attack.
 
 ## Features
--   **Two Player Controls:** Each player can independently move, jump, and attack.
--   **Health Meters:** Each player has a health meter displayed at the top of the screen.
--   **Timer:** A timer counts down the duration of the game.
--   **Special Attacks:** A 1/4 chance of triggering a special attack that deals 4 times the damage.
--   **Game Over Logic:** The game determines the winner based on health levels or time remaining.
--   **Animations:** Smooth animations for movement, jumping, attacking, and special attacks.
--   **Sound Effects:** Includes sounds for actions like fighting and game over.
+
+- **Two Player Controls:** Each player can independently move, jump, and attack.
+- **Health Meters:** Each player has a health meter displayed at the top of the screen.
+- **Timer:** A timer counts down the duration of the game.
+- **Special Attacks:** A 1/4 chance of triggering a special attack that deals 4 times the damage.
+- **Game Over Logic:** The game determines the winner based on health levels or time remaining.
+- **Animations:** Smooth animations for movement, jumping, attacking, and special attacks.
+- **Sound Effects:** Includes sounds for actions like fighting and game over.
 
 ## How to Play
 
@@ -37,4 +46,5 @@ The game features two players, each with their own set of controls. The players 
 6. Click "Restart" to play again.
 
 ## Technical Details
+
 This game was developed using vanilla JavaScript, HTML, and CSS. The game logic, animations, and interactions are handled through JavaScript, utilizing the Canvas API for rendering graphics and handling animations.
